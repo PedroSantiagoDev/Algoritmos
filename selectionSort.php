@@ -1,5 +1,5 @@
 <?php
-function findSmall(array $arr)
+function findSmall(array $arr): int
 {
     $smallest = $arr[0];
     $smallestIndex = 0;
@@ -13,7 +13,7 @@ function findSmall(array $arr)
     return $smallestIndex;
 }
 
-function selectionSort(array $arr)
+function selectionSort(array $arr): array
 {
     $newArr = [];
     for ($i = 0, $length = count($arr); $i < $length; $i++) {
